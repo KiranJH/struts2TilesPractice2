@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+"-//Apache Software Foundation//DTD Struts Configuration 2.5//EN"
+"http://struts.apache.org/dtds/struts-2.5.dtd">
+
+<struts>
+	<constant name="struts.convention.default.parent.package" value="controller" />
+    <package name="controller" extends="struts-default">
+		<result-types>
+			<result-type name="tiles" class="org.apache.struts2.views.tiles.TilesResult" />
+		</result-types>
+		
+		<action name="index" class="controller.SampleController" method="index">
+            <result name="success" type="tiles">home.index</result>
+        </action>
+        
+        <action name="aboutus" class="controller.SampleController" method="aboutus">
+            <result name="success" type="tiles">home.aboutus</result>
+        </action>
+        
+        <action name="contactus" class="controller.SampleController" method="contactus">
+            <result name="success" type="tiles">home.contactus</result>
+        </action>
+      
+    </package>
+</struts>
