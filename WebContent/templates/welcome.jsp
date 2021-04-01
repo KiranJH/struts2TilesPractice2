@@ -11,9 +11,9 @@
 
 </head>
 <body>
-	<s:a namespace="/home" action="index">Home</s:a>
-	<s:a namespace="/aboutus" action="aboutus"> About Us</s:a>
-	<s:a namespace="/contactus" action="contactus"> Contact Us</s:a>
+	<s:a action="index">Home</s:a>
+	<s:a action="aboutus"> About Us</s:a>
+	<s:a action="contactus"> Contact Us</s:a>
 	<br> <br> <br>
 	<tiles:insertAttribute name="content"></tiles:insertAttribute>
 	<br> <br> <br> <br>
